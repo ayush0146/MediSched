@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSched</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <div>
+                <span id="logo">MediSched</span>
+                <ul id="pnavbar">
+                    <div class="first-list"><li class="nav"><a href="/">Find Doctors</a></li></div>
+                    <div class="first-list"><li class="nav"><a href="/">Video Consult</a></li></div>
+                    <div class="first-list"><li class="nav"><a href="/">Medicines</a></li></div>
+                    <div class="first-list"><li class="nav"><a href="/">Lab Tests</a></li></div>
+                    <div class="first-list"><li class="nav"><a href="/">Surgeries</a></li></div>
+                </ul>
+            </div>
+            <div id="right-navbar">
+                <div class="dropdown">
+                    <button class="dropdown-button">For Corporates</button>
+                    <div class="dropdown-content">
+                        <a class="nav-interact" href="#">Health & Wellness Plans</a><br>
+                        <a class="nav-interact" href="#">Group Insurance</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">For Providers</button>
+                    <div class="dropdown-content">
+                        <a class="nav-interact" href="#">MediSched Prime</a><br>
+                        <a class="nav-interact" href="#">Software for Providers</a><br>
+                        <a class="nav-interact" href="#">List your practices for free</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">Security & Help</button>
+                    <div class="dropdown-content">
+                        <a class="nav-interact" href="#">Data Security</a><br>
+                        <a class="nav-interact" href="#">Help</a>
+                    </div>
+                </div>
+                <div>
+                    <button type="login" id="login-button">Login/Signup</button>
+                </div>
+            </div>
+    </header>
+    <hr id="first-line-break">
+    <main>
+        <div id="second-nav">
+            <div class="signup-login">
+                <a href="#" id="register">Register</a>
+            </div>
+        </div>
+        <br>
+        <div id="registration-form">
+            <div id="register-form-head">
+                <span id="join-medisched">Join MediSched</span>
+                <span id="join-doctor">Are you a doctor? <a href="#" id="doctor-register">Register Here</a></span>
+                <hr id="line-break">
+            </div>
+            <div id="full-name-bar">
+                <label for="full name" id="full-name">Full Name</label><br>
+                <input type="text" name="full name" id="full-name-input" placeholder="Full Name">
+            </div>
+            <div id="number-bar">
+                <label for="phone number" id="phone-number">Mobile Number</label><br>
+                <select name="country code" id="country-code" selected="+91(IND)">
+                    <option value="IND">+91(IND)</option>
+                    <option value="SGP">+65(SGP)</option>
+                    <option value="PHL">+63(PHL)</option>
+                    <option value="MYS">+60(MYS)</option>
+                    <option value="IDN">+62(IDN)</option>
+                    <option value="BRA">+55(BRA)</option>
+                    <option value="MEX">+52(MEX)</option>
+                    <option value="ARG">+54(ARG)</option>
+                    <option value="CHL">+56(CHL)</option>
+                    <option value="VNM">+84(VNM)</option>
+                    <option value="UAE">+971(UAE)</option>
+                    <option value="KW" >+965(KW)</option>
+                    <option value="TZA">+255(TZA)</option>
+                    <option value="BH" >+973(BH)</option>
+                    <option value="SA" >+966(SA)</option>
+                    <option value="USA">+1(USA)</option>
+                </select>
+                <input type="tel" name="phone number" id="number-input" placeholder="Mobile Number">
+            </div>
+            <div id="pswd-bar">
+                <label for="create pswd" id="create-pswd">Create Password</label><br>
+                <input type="text" name="create pswd" id="pswd-input" placeholder="Password">
+            </div>
+            <div id="offer-email">
+                <input type="checkbox" name="offer email" id="email-checkbox">
+                <label for="offer email" id="email-checkbox-content">Receive relevant offers and promotional communication from MediSched</label>
+            </div>
+            <div id="sign-up-terms">
+                <span class="terms">By signing up, I agree to <a href="#" id="terms">terms</a></span>
+            </div>
+            <div id="otp-button">
+                <button type="submit" id="send-otp">Send OTP</button>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

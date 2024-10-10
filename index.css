@@ -1,0 +1,288 @@
+.nav {
+    list-style-type:none;
+    display: inline-block;
+}
+.features {
+    list-style-type:none;
+    display: inline-block;
+}
+#logo {
+    font-size:25px;
+    font-weight:700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header div a {
+    text-decoration:none;
+}
+header div {
+    display:inline-block;
+}
+#pnavbar {
+    display:inline-block;
+}
+#snavbar {
+    display: inline-block;
+}
+.first-list {
+    margin:0px 20px 0px 0px;
+    padding:22px 0px 9px;
+}
+header div .first-list .nav a {
+    font-size: 16px;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 550;
+    color:#2d2d32;
+    line-height:20px;
+    letter-spacing:-0.3px;
+}
+header div .features a {
+    font-size:14px;
+    color: #414146;
+    font-family: "Lato", "Open Sans", sans-serif;
+}
+
+
+
+.dropdown-button {
+    background: none; /* Remove button background */
+    border: none;     /* Remove button border */
+    font-size: 16px;  /* Set font size */
+    cursor: pointer;  /* Change cursor to pointer */
+}
+
+.dropdown-button::after {
+    content: " ▼"; /* Add dropdown arrow symbol */
+    font-size: 16px;
+    margin-left: 5px; /* Adjust space between text and arrow */
+}
+
+/* Additional styling for alignment and spacing */
+.dropdown {
+    display: inline-block;  /* Make dropdowns inline */
+    margin-right: 20px;     /* Space between dropdowns */
+}
+#right-navbar {
+    margin-left:200px;
+}
+
+.dropdown-content {
+    display: none;  /* Hide dropdown items initially */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header div div .nav-interact {
+    text-decoration: none;
+    font-size: 14px;
+    color:#414146;
+    font-family:"Lato", "Open Sans", sans-serif;
+    padding:10px 20px;
+}
+
+#login-button {
+    font-size:13px;
+    line-height:13px;
+    color: #787887 !important;
+    border-radius: 4px;
+    border: solid 1px #d3d3d3;
+    padding: 8px 10px;
+}
+
+.signup-login {
+    list-style-type:none;
+}
+#second-nav {
+    text-align: center;
+}
+
+#first-line-break {
+    border: solid 1px rgba(216, 216, 216, 0.5);
+}
+#register {
+    text-decoration:none;
+    font-size: 20px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color:#14BEF0;
+    font-weight:bold;
+    padding:0px 20px;
+    display:inline-block;
+    border-bottom: 3px solid #14BEF0;
+}
+
+#registration-form {
+    border: solid 1px rgba(216, 216, 216, 0.5);
+    border-radius:4px;
+    text-align: center;
+    width:500px;
+    margin:0 auto;
+}
+
+#join-medisched {
+    font-size: 20px;
+    color: #787887;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-right:100px;
+}
+
+#doctor-register {
+    text-decoration:none;
+    color: #ED9B2D;
+    font-size: 12px;
+    font-family:"Lato", "Open Sans", sans-serif;
+}
+
+#full-name {
+    font-size: 15px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color: #787887;
+}
+#full-name-input {
+    margin-top:10px;
+    width:90%;
+    height:30px;
+    font-size:15px;
+    background:#FFF;
+    padding: 2px 12px;
+    border:solid 2px rgba(216, 216, 216, 0.5);
+    border-radius:3px;
+    /* margin-right:20px; */
+}
+#full-name-bar {
+    text-align:left;
+    margin-left:30px;
+    margin-top:15px;
+}
+
+#line-break {
+    border: solid 1px rgba(216, 216, 216, 0.5);
+    margin-top: 10px;
+}
+
+#register-form-head {
+    margin-top: 10px;
+}
+
+#number-bar {
+    text-align:left;
+    margin-left:30px;
+    margin-top:15px;
+}
+
+#phone-number {
+    font-size: 15px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color: #787887;
+}
+
+#number-input {
+    margin-top:10px;
+    width:55%;
+    height:30px;
+    font-size:15px;
+    background:#FFF;
+    padding: 2px 12px;
+    border:solid 2px rgba(216, 216, 216, 0.5);
+    border-radius:3px;
+    /* margin-right:20px; */
+}
+
+#country-code {
+    font-size: 15px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color: #787887;
+    margin-top:10px;
+    width:30%;
+    height:37px;
+    font-size:15px;
+    background:#FFF;
+    padding: 2px 12px;
+    border:solid 2px rgba(216, 216, 216, 0.5);
+    margin-right:20px;
+    border-radius:3px;
+    /* margin-right:20px; */
+}
+
+#pswd-bar {
+    text-align:left;
+    margin-left:30px;
+    margin-top:15px;
+}
+
+#create-pswd {
+    font-size: 15px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color: #787887;
+}
+
+#pswd-input {
+    margin-top:10px;
+    width:90%;
+    height:30px;
+    font-size:15px;
+    background:#FFF;
+    padding: 2px 12px;
+    border:solid 2px rgba(216, 216, 216, 0.5);
+    border-radius:3px;
+    /* margin-right:20px; */
+}
+
+#offer-email {
+    width:90%;
+    margin-top:10px;
+    margin-left:10px;
+}
+#email-checkbox {
+    font-size: 12px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color:#7F7F7F;
+}
+#email-checkbox-content {
+    font-size: 12px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    color:#7F7F7F;
+}
+
+#terms {
+    text-decoration:none;
+    color:#14BEF0;
+    font-size:10px;
+    font-family:"Lato", "Open Sans", sans-serif;
+}
+
+.terms {
+    font-size:10px;
+    color:#7F7F7F;
+    font-family:"Lato", "Open Sans", sans-serif;
+}
+
+#sign-up-terms {
+    display: inline-block;
+    margin-left:30px;
+}
+
+#otp-button {
+    margin-top:10px;
+    margin-left:30px;
+    margin-right:20px;
+}
+
+#send-otp {
+    width:100%;
+    /* height:30px; */
+    margin-bottom:20px;
+    color:#fff;
+    background:#13BEF0;
+    font-size:14px;
+    font-family:"Lato", "Open Sans", sans-serif;
+    padding:10px 16px;
+    border: none;
+    border-radius:3px;
+}

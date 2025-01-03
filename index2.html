@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSched</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div id="global-nav-bar">
+            <div id="nav-left">
+                <a href="index.html" id="logo-anchor-tag"><img src="MediSched logo.jpg" alt="MediSched logo" id="logo-img"></a>
+            </div>
+            <div id="nav-mid">
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Find Doctors</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Video Consult</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Medicines</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Lab Tests</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Surgeries</a></div>
+            </div>
+            <div id="nav-right">
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">For Corporates</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Health & Wellness Plans</a>
+                        <a href="#">Group Insurance</a>
+                    </div>
+                </div>
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">For Providers</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Software for providers</a>
+                        <a href="#">List your practice for free</a>
+                    </div>
+                </div>
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">Security & help</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Data Security</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+                <div id="login-signup-page-button"><a href="#" id="login-signup-page-button-anchor-tag">Login/Signup</a></div>
+            </div>
+        </div><hr id="header-main-line">
+    </header>
+    <main>
+        <div id="register-signup-content">
+            <div id="secondary-nav">
+                <!-- <div class="secondary-nav login"><a href="#" id="login-link">Login</a></div> -->
+                <div class="secondary-nav register"><a href="#" id="register-link">Register</a></div>
+            </div>
+            <div id="register-content">
+                <div id="image"><img src="register-div-image.webp" alt="image" class="image"></div>
+                <div id="registration-form">
+                    <div id="register-form-head">
+                        <span id="join-medisched">Join MediSched</span>
+                        <span id="join-doctor">Are you a doctor? <a href="#" id="doctor-register">Register Here</a></span>
+                        <hr id="line-break">
+                    </div>
+                    <div id="full-name-bar">
+                        <label for="full name" id="full-name">Full Name</label><br>
+                        <input type="text" name="full name" id="full-name-input" placeholder="Full Name" class="input-class">
+                    </div>
+                    <div id="number-bar">
+                        <label for="phone number" id="phone-number">Mobile Number</label><br>
+                        <select name="country code" id="country-code" selected="+91(IND)" class="input-class">
+                            <option value="IND">+91(IND)</option>
+                            <option value="SGP">+65(SGP)</option>
+                            <option value="PHL">+63(PHL)</option>
+                            <option value="MYS">+60(MYS)</option>
+                            <option value="IDN">+62(IDN)</option>
+                            <option value="BRA">+55(BRA)</option>
+                            <option value="MEX">+52(MEX)</option>
+                            <option value="ARG">+54(ARG)</option>
+                            <option value="CHL">+56(CHL)</option>
+                            <option value="VNM">+84(VNM)</option>
+                            <option value="UAE">+971(UAE)</option>
+                            <option value="KW" >+965(KW)</option>
+                            <option value="TZA">+255(TZA)</option>
+                            <option value="BH" >+973(BH)</option>
+                            <option value="SA" >+966(SA)</option>
+                            <option value="USA">+1(USA)</option>
+                        </select>
+                        <input type="tel" name="phone number" id="number-input" placeholder="Mobile Number" class="input-class">
+                    </div>
+                    <div id="pswd-bar">
+                        <label for="create pswd" id="create-pswd">Create Password</label><br>
+                        <input type="text" name="create pswd" id="pswd-input" placeholder="Password" class="input-class">
+                    </div>
+                    <div id="offer-email">
+                        <input type="checkbox" name="offer email" id="email-checkbox">
+                        <label for="offer email" id="email-checkbox-content">Receive relevant offers and promotional communication from MediSched</label>
+                    </div>
+                    <div id="sign-up-terms">
+                        <span class="terms">By signing up, I agree to <a href="#" id="terms">terms</a></span>
+                    </div>
+                    <div id="otp-button">
+                        <button type="submit" id="send-otp">Send OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-wrapper-div">
+            <div id="footer-content">
+                <div class="footer-content-categories">
+                    <h4>MediSched</h4>
+                    <a href="#" class="footer-links">About</a>
+                    <a href="#" class="footer-links">Blog</a>
+                    <a href="#" class="footer-links">Careers</a>
+                    <a href="#" class="footer-links">Press</a>
+                    <a href="#" class="footer-links">Contact Us</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>For patients</h4>
+                    <a href="#" class="footer-links">Search for doctors</a>
+                    <a href="#" class="footer-links">Search for clinics</a>
+                    <a href="#" class="footer-links">Search for hospitals</a>
+                    <a href="#" class="footer-links">Read health articles</a>
+                    <a href="#" class="footer-links">Read about medicines</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>For doctors</h4>
+                    <a href="#" class="footer-links">MediSched Profile</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>More</h4>
+                    <a href="#" class="footer-links">Help</a>
+                    <a href="#" class="footer-links">Developers</a>
+                    <a href="#" class="footer-links">Privacy Policy</a>
+                    <a href="#" class="footer-links">Terms & Conditions</a>
+                    <a href="#" class="footer-links">Healthcare Directory</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>Social</h4>
+                    <a href="#" class="footer-links">Facebook</a>
+                    <a href="#" class="footer-links">Twitter</a>
+                    <a href="#" class="footer-links">Linkedin</a>
+                    <a href="#" class="footer-links">Youtube</a>
+                    <a href="#" class="footer-links">Github</a>
+                </div>
+            </div>
+            <div id="footer-copyright">
+                <div><img src="MediSched logo.jpg" alt="MediSched logo"></div>
+                <p>Copyright &#169; 2024, MediSched.All rights reserved.</p>
+            </div>
+        </div>
+    </footer>

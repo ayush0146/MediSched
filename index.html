@@ -8,100 +8,194 @@
 </head>
 <body>
     <header>
-            <div>
-                <span id="logo">MediSched</span>
-                <ul id="pnavbar">
-                    <div class="first-list"><li class="nav"><a href="/">Find Doctors</a></li></div>
-                    <div class="first-list"><li class="nav"><a href="/">Video Consult</a></li></div>
-                    <div class="first-list"><li class="nav"><a href="/">Medicines</a></li></div>
-                    <div class="first-list"><li class="nav"><a href="/">Lab Tests</a></li></div>
-                    <div class="first-list"><li class="nav"><a href="/">Surgeries</a></li></div>
-                </ul>
+        <div id="global-nav-bar">
+            <div id="nav-left">
+                <a href="index.html" id="logo-anchor-tag"><img src="MediSched logo.jpg" alt="MediSched logo" id="logo-img"></a>
             </div>
-            <div id="right-navbar">
-                <div class="dropdown">
-                    <button class="dropdown-button">For Corporates</button>
-                    <div class="dropdown-content">
-                        <a class="nav-interact" href="#">Health & Wellness Plans</a><br>
-                        <a class="nav-interact" href="#">Group Insurance</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-button">For Providers</button>
-                    <div class="dropdown-content">
-                        <a class="nav-interact" href="#">MediSched Prime</a><br>
-                        <a class="nav-interact" href="#">Software for Providers</a><br>
-                        <a class="nav-interact" href="#">List your practices for free</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-button">Security & Help</button>
-                    <div class="dropdown-content">
-                        <a class="nav-interact" href="#">Data Security</a><br>
-                        <a class="nav-interact" href="#">Help</a>
-                    </div>
-                </div>
-                <div>
-                    <button type="login" id="login-button">Login/Signup</button>
-                </div>
+            <div id="nav-mid">
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Find Doctors</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Video Consult</a></div>
+                <div class="nav-mid-contents"><a href="#" class="nav-mid-contents-anchor-tag">Surgeries</a></div>
             </div>
+            <div id="nav-right">
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">For Corporates</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Health & Wellness Plans</a>
+                        <a href="#">Group Insurance</a>
+                    </div>
+                </div>
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">For Providers</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Software for providers</a>
+                        <a href="#">List your practice for free</a>
+                    </div>
+                </div>
+                <div class="nav-right-contents">
+                    <span class="nav-right-content-item">Security & help</span> <span class="dropdown-symbol">&#9013;</span>
+                    <div class="dropdown-content">
+                        <a href="#">Data Security</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+                <div id="login-signup-page-button"><a href="index2.html" id="login-signup-page-button-anchor-tag">Login/Signup</a></div>
+            </div>
+        </div><hr id="header-main-line">
     </header>
-    <hr id="first-line-break">
     <main>
-        <div id="second-nav">
-            <div class="signup-login">
-                <a href="#" id="register">Register</a>
+        <div id="search-boxes">
+            <input type="text" placeholder=" Location" id="location-search-box">
+            <input type="text" placeholder="&#x1F50D; Search doctors, clinics, hospitals, etc."id="facilities-search-box">
+        </div>
+        <div id="features-card">
+            <div class="individual-cards">
+                <a href="#">
+                    <img src="video-consultation.jpg" alt="video consultation" id="video-consult" class="individual-card-img">
+                    <h2>Instant Video Consultation</h2>
+                    <p>Connect within 60 secs</p>
+                </a>
+            </div>
+            <div class="individual-cards">
+                <a href="#">
+                    <img src="find-doctors-near-you.jpg" alt="find doctors" id="find-doctors" class="individual-card-img">
+                    <h2>Find Doctors Near You</h2>
+                    <p>Confirmed Appointments</p>
+                </a>
+            </div>
+            <div class="individual-cards">
+                <a href="#">
+                    <img src="trusted-surgeries.jpg" alt="Surgeries" id="surgeries" class="individual-card-img">
+                    <h2>Surgeries</h2>
+                    <p>Safe and trusted surgery centres</p>
+                </a>
             </div>
         </div>
-        <br>
-        <div id="registration-form">
-            <div id="register-form-head">
-                <span id="join-medisched">Join MediSched</span>
-                <span id="join-doctor">Are you a doctor? <a href="#" id="doctor-register">Register Here</a></span>
-                <hr id="line-break">
+        <div id="wrapper-for-doctor-consultation">
+            <div id="first-div-inside-doctor-consult">
+                <div id="text-for-doctor-consultaion">
+                    <h2>Consult top doctors online for any health concern</h2>
+                    <p>Private online consultations with verified doctors in all specialists</p>
+                </div>
+                <a href="#" id="all-specialities-anchor">View all specialities</a>
             </div>
-            <div id="full-name-bar">
-                <label for="full name" id="full-name">Full Name</label><br>
-                <input type="text" name="full name" id="full-name-input" placeholder="Full Name">
-            </div>
-            <div id="number-bar">
-                <label for="phone number" id="phone-number">Mobile Number</label><br>
-                <select name="country code" id="country-code" selected="+91(IND)">
-                    <option value="IND">+91(IND)</option>
-                    <option value="SGP">+65(SGP)</option>
-                    <option value="PHL">+63(PHL)</option>
-                    <option value="MYS">+60(MYS)</option>
-                    <option value="IDN">+62(IDN)</option>
-                    <option value="BRA">+55(BRA)</option>
-                    <option value="MEX">+52(MEX)</option>
-                    <option value="ARG">+54(ARG)</option>
-                    <option value="CHL">+56(CHL)</option>
-                    <option value="VNM">+84(VNM)</option>
-                    <option value="UAE">+971(UAE)</option>
-                    <option value="KW" >+965(KW)</option>
-                    <option value="TZA">+255(TZA)</option>
-                    <option value="BH" >+973(BH)</option>
-                    <option value="SA" >+966(SA)</option>
-                    <option value="USA">+1(USA)</option>
-                </select>
-                <input type="tel" name="phone number" id="number-input" placeholder="Mobile Number">
-            </div>
-            <div id="pswd-bar">
-                <label for="create pswd" id="create-pswd">Create Password</label><br>
-                <input type="text" name="create pswd" id="pswd-input" placeholder="Password">
-            </div>
-            <div id="offer-email">
-                <input type="checkbox" name="offer email" id="email-checkbox">
-                <label for="offer email" id="email-checkbox-content">Receive relevant offers and promotional communication from MediSched</label>
-            </div>
-            <div id="sign-up-terms">
-                <span class="terms">By signing up, I agree to <a href="#" id="terms">terms</a></span>
-            </div>
-            <div id="otp-button">
-                <button type="submit" id="send-otp">Send OTP</button>
+            <div id="second-div-inside-doctor-consult">
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="irregular-painful+period.png" alt="irregular periods" class="card-link-img">
+                        <p>Periods doubts or Pregnancy</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="Acne.png" alt="skin issues" class="card-link-img">
+                        <p>Acne, pimple or skin issues</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="top-speciality-sexology.svg" alt="sexology" class="card-link-img">
+                        <p>Performance issues in bed</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="coughing.png" alt="cold" class="card-link-img">
+                        <p>Cold, cough or fever</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="top-speciality-pediatric.svg" alt="child issues" class="card-link-img">
+                        <p>Child not feeling well</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
+                <div class="card-link">
+                    <a href="#" class="card-link-anchor">
+                        <img src="12-mental-wellness.png" alt="depression anxiety" class="card-link-img">
+                        <p>Depression or anxiety</p><h5>CONSULT NOW</h5>
+                    </a>
+                </div>
             </div>
         </div>
-        
+        <div id="wrapper-for-inclinic-consultation">
+            <div id="first-div-inside-inclinic-consult">
+                <h2>Book an appointment for an in-clinic consultation</h2>
+                <p>Find experienced doctors across all specialities</p>
+            </div>
+            <div id="second-div-inside-inclinic-consult">
+                <div class="inclinic-card-link">
+                    <a href="#" class="inclinic-card-link-anchor">
+                        <img src="dentist.jpg" alt="dentist" class="inclinic-card-link-img">
+                        <h3>Dentist</h3><p>Teething troubles?Schedule a dental checkup</p>
+                    </a>
+                </div>
+                <div class="inclinic-card-link">
+                    <a href="#" class="inclinic-card-link-anchor">
+                        <img src="gynecologist.jpg" alt="gynecologist" class="inclinic-card-link-img">
+                        <h3>Gynecologist/Obstetrician</h3><p>Explore for women's health, pregnancy and infertility treatments</p>
+                    </a>
+                </div>
+                <div class="inclinic-card-link">
+                    <a href="#" class="inclinic-card-link-anchor">
+                        <img src="dietitian.jpg" alt="dietitian" class="inclinic-card-link-img">
+                        <h3>Dietitian/Nutrition</h3><p>Get guidance on eating right, weight management and sports nutrition</p>
+                    </a>
+                </div>
+                <div class="inclinic-card-link">
+                    <a href="#" class="inclinic-card-link-anchor">
+                        <img src="physiotherapist.jpg" alt="phsiotherapist" class="inclinic-card-link-img">
+                        <h3>Physiotherapist</h3><p>Pulled a muscle? Get it treated by a trained physiotherapist</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div id="footer-wrapper-div">
+            <div id="footer-content">
+                <div class="footer-content-categories">
+                    <h4>MediSched</h4>
+                    <a href="#" class="footer-links">About</a>
+                    <a href="#" class="footer-links">Blog</a>
+                    <a href="#" class="footer-links">Careers</a>
+                    <a href="#" class="footer-links">Press</a>
+                    <a href="#" class="footer-links">Contact Us</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>For patients</h4>
+                    <a href="#" class="footer-links">Search for doctors</a>
+                    <a href="#" class="footer-links">Search for clinics</a>
+                    <a href="#" class="footer-links">Search for hospitals</a>
+                    <a href="#" class="footer-links">Read health articles</a>
+                    <a href="#" class="footer-links">Read about medicines</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>For doctors</h4>
+                    <a href="#" class="footer-links">MediSched Profile</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>More</h4>
+                    <a href="#" class="footer-links">Help</a>
+                    <a href="#" class="footer-links">Developers</a>
+                    <a href="#" class="footer-links">Privacy Policy</a>
+                    <a href="#" class="footer-links">Terms & Conditions</a>
+                    <a href="#" class="footer-links">Healthcare Directory</a>
+                </div>
+                <div class="footer-content-categories">
+                    <h4>Social</h4>
+                    <a href="#" class="footer-links">Facebook</a>
+                    <a href="#" class="footer-links">Twitter</a>
+                    <a href="#" class="footer-links">Linkedin</a>
+                    <a href="#" class="footer-links">Youtube</a>
+                    <a href="#" class="footer-links">Github</a>
+                </div>
+            </div>
+            <div id="footer-copyright">
+                <div><img src="MediSched logo.jpg" alt="MediSched logo"></div>
+                <p>Copyright &#169; 2024, MediSched.All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,288 +1,400 @@
-.nav {
-    list-style-type:none;
-    display: inline-block;
+html body{
+    margin: 0;
+    padding: 0;
 }
-.features {
-    list-style-type:none;
-    display: inline-block;
-}
-#logo {
-    font-size:25px;
-    font-weight:700;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-header div a {
-    text-decoration:none;
-}
-header div {
-    display:inline-block;
-}
-#pnavbar {
-    display:inline-block;
-}
-#snavbar {
-    display: inline-block;
-}
-.first-list {
-    margin:0px 20px 0px 0px;
-    padding:22px 0px 9px;
-}
-header div .first-list .nav a {
-    font-size: 16px;
-    font-family: "Lato", "Open Sans", sans-serif;
-    font-weight: 550;
-    color:#2d2d32;
-    line-height:20px;
-    letter-spacing:-0.3px;
-}
-header div .features a {
-    font-size:14px;
-    color: #414146;
-    font-family: "Lato", "Open Sans", sans-serif;
+#global-nav-bar{
+    height: 73.2px;
+    display: flex;
+    margin: auto;
+    width: 90%;
 }
 
-
-
-.dropdown-button {
-    background: none; /* Remove button background */
-    border: none;     /* Remove button border */
-    font-size: 16px;  /* Set font size */
-    cursor: pointer;  /* Change cursor to pointer */
+/* nav-left */
+#nav-left{
+    width: 158px;
+    height: 100%;
 }
 
-.dropdown-button::after {
-    content: " ▼"; /* Add dropdown arrow symbol */
-    font-size: 16px;
-    margin-left: 5px; /* Adjust space between text and arrow */
+#global-nav-bar #nav-left #logo-img{
+    width: 135px;
+    height: 24.84px;
+    padding: 20px 0px 28px;
 }
 
-/* Additional styling for alignment and spacing */
-.dropdown {
-    display: inline-block;  /* Make dropdowns inline */
-    margin-right: 20px;     /* Space between dropdowns */
-}
-#right-navbar {
-    margin-left:200px;
+/* nav-mid */
+#nav-mid{
+    display: flex;
+    justify-content: space-between;
+    width: 290.51px;
 }
 
-.dropdown-content {
-    display: none;  /* Hide dropdown items initially */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.nav-mid-contents{
+    padding: 22px 0px 9px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-header div div .nav-interact {
+#global-nav-bar #nav-mid .nav-mid-contents-anchor-tag{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #2d2d32;
+    letter-spacing: -0.3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    font-size: 14px;
-    color:#414146;
-    font-family:"Lato", "Open Sans", sans-serif;
-    padding:10px 20px;
 }
 
-#login-button {
-    font-size:13px;
-    line-height:13px;
-    color: #787887 !important;
-    border-radius: 4px;
-    border: solid 1px #d3d3d3;
-    padding: 8px 10px;
+
+/* nav-right */
+#nav-right{
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-between;
+    width: 521.98px;
+    padding: 24px 0px 0px 0px;
+}
+#nav-right .nav-right-contents .nav-right-content-item{
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
 }
 
-.signup-login {
-    list-style-type:none;
-}
-#second-nav {
-    text-align: center;
-}
-
-#first-line-break {
-    border: solid 1px rgba(216, 216, 216, 0.5);
-}
-#register {
-    text-decoration:none;
-    font-size: 20px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color:#14BEF0;
-    font-weight:bold;
-    padding:0px 20px;
-    display:inline-block;
-    border-bottom: 3px solid #14BEF0;
-}
-
-#registration-form {
-    border: solid 1px rgba(216, 216, 216, 0.5);
-    border-radius:4px;
-    text-align: center;
-    width:500px;
-    margin:0 auto;
-}
-
-#join-medisched {
-    font-size: 20px;
-    color: #787887;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#nav-right .nav-right-contents .dropdown-symbol{
+    padding-bottom: 1px;
     font-weight: 600;
-    margin-right:100px;
 }
 
-#doctor-register {
-    text-decoration:none;
-    color: #ED9B2D;
-    font-size: 12px;
-    font-family:"Lato", "Open Sans", sans-serif;
+#nav-right #login-signup-page-button #login-signup-page-button-anchor-tag{
+    font-size: 13px;
+    padding: 8px 10px;
+    color: #737382;
+    line-height: 13px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
-#full-name {
-    font-size: 15px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color: #787887;
-}
-#full-name-input {
-    margin-top:10px;
-    width:90%;
-    height:30px;
-    font-size:15px;
-    background:#FFF;
-    padding: 2px 12px;
-    border:solid 2px rgba(216, 216, 216, 0.5);
-    border-radius:3px;
-    /* margin-right:20px; */
-}
-#full-name-bar {
-    text-align:left;
-    margin-left:30px;
-    margin-top:15px;
+#nav-right #login-signup-page-button #login-signup-page-button-anchor-tag:hover{
+    border: 1px solid #018f07;
+    color: #018f07;
 }
 
-#line-break {
-    border: solid 1px rgba(216, 216, 216, 0.5);
-    margin-top: 10px;
-}
 
-#register-form-head {
-    margin-top: 10px;
-}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+  }
+  
+  /* Dropdown content links */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #e9e9e9;
+  }
+  
+  /* Show dropdown on hover or click */
+  .nav-right-contents:hover .dropdown-content {
+    display: block;
+  }
 
-#number-bar {
-    text-align:left;
-    margin-left:30px;
-    margin-top:15px;
-}
-
-#phone-number {
-    font-size: 15px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color: #787887;
-}
-
-#number-input {
-    margin-top:10px;
-    width:55%;
-    height:30px;
-    font-size:15px;
-    background:#FFF;
-    padding: 2px 12px;
-    border:solid 2px rgba(216, 216, 216, 0.5);
-    border-radius:3px;
-    /* margin-right:20px; */
-}
-
-#country-code {
-    font-size: 15px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color: #787887;
-    margin-top:10px;
-    width:30%;
-    height:37px;
-    font-size:15px;
-    background:#FFF;
-    padding: 2px 12px;
-    border:solid 2px rgba(216, 216, 216, 0.5);
-    margin-right:20px;
-    border-radius:3px;
-    /* margin-right:20px; */
-}
-
-#pswd-bar {
-    text-align:left;
-    margin-left:30px;
-    margin-top:15px;
-}
-
-#create-pswd {
-    font-size: 15px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color: #787887;
-}
-
-#pswd-input {
-    margin-top:10px;
-    width:90%;
-    height:30px;
-    font-size:15px;
-    background:#FFF;
-    padding: 2px 12px;
-    border:solid 2px rgba(216, 216, 216, 0.5);
-    border-radius:3px;
-    /* margin-right:20px; */
-}
-
-#offer-email {
-    width:90%;
-    margin-top:10px;
-    margin-left:10px;
-}
-#email-checkbox {
-    font-size: 12px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color:#7F7F7F;
-}
-#email-checkbox-content {
-    font-size: 12px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    color:#7F7F7F;
-}
-
-#terms {
-    text-decoration:none;
-    color:#14BEF0;
-    font-size:10px;
-    font-family:"Lato", "Open Sans", sans-serif;
-}
-
-.terms {
-    font-size:10px;
-    color:#7F7F7F;
-    font-family:"Lato", "Open Sans", sans-serif;
-}
-
-#sign-up-terms {
-    display: inline-block;
-    margin-left:30px;
-}
-
-#otp-button {
-    margin-top:10px;
-    margin-left:30px;
-    margin-right:20px;
-}
-
-#send-otp {
-    width:100%;
-    /* height:30px; */
-    margin-bottom:20px;
-    color:#fff;
-    background:#13BEF0;
-    font-size:14px;
-    font-family:"Lato", "Open Sans", sans-serif;
-    padding:10px 16px;
+/* line break between header and main  */
+#header-main-line{
+    margin-top: 0px;
+    margin-bottom: 0px;
     border: none;
-    border-radius:3px;
+    border-top: 1px solid #d3d3d3;
+}
+
+
+/* main */
+
+/* search boxes */
+#search-boxes{
+    display: flex;
+    gap: 0;
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main #search-boxes #location-search-box{
+    width: 284px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #b4b4be;
+    border-radius: 4px 0 0 4px;
+}
+
+main #search-boxes #facilities-search-box{
+    width: 427px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #b4b4be;
+    border-radius: 0 4px 4px 0;
+}
+
+/* features card*/
+
+main #features-card{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid  black; */
+    margin: auto;
+    gap: 20px;
+}
+
+main #features-card .individual-cards{
+    width: 198px;
+    border: 1px solid #b4b4be;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px #d3d3d3;
+}
+
+main #features-card .individual-cards #video-consult{
+    background-color: #afcfed;
+}
+main #features-card .individual-cards #find-doctors{
+    background-color: #98cbd6;
+}
+main #features-card .individual-cards #surgeries{
+    background-color: #d5d8fc;
+}
+
+main #features-card .individual-card-img{
+    width: 100%;
+    height: 60%;
+    border-radius: 18px 18px 0 0;
+}
+
+main #features-card .individual-cards a {
+    text-decoration: none;
+}
+
+main #features-card .individual-cards a p{
+    margin-left: 10px;
+    color: #414146;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main #features-card .individual-cards a h2{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+/* doctor consultation section */
+
+#wrapper-for-doctor-consultation{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+main #wrapper-for-doctor-consultation #first-div-inside-doctor-consult{
+    display: flex;
+    justify-content: space-between;
+}
+
+main #wrapper-for-doctor-consultation #first-div-inside-doctor-consult a{
+    text-decoration: none;
+    color: #018f07;
+    border: 1px solid #018f07;
+    border-radius: 5px;
+    width: 156px;
+    height: 43px;
+    font-size: 17px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #wrapper-for-doctor-consultation #first-div-inside-doctor-consult #text-for-doctor-consultaion h2{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+    margin-bottom: 15px;
+}
+
+main #wrapper-for-doctor-consultation #first-div-inside-doctor-consult #text-for-doctor-consultaion p{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult .card-link{
+    width: 180px;
+    height: 250px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult .card-link a{
+    text-decoration: none;
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult img{
+    width: 70%;
+    margin-left: 27px;
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult p{
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Lato, Helvetica, Arial, sans-serif;    
+    margin-left: 37px;
+    color: black;
+}
+
+main #wrapper-for-doctor-consultation #second-div-inside-doctor-consult h5{
+    width: 100%;
+    text-align: center;
+    color: #018f07;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+
+
+/* inclinic consultation */
+
+#wrapper-for-inclinic-consultation{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#wrapper-for-inclinic-consultation #first-div-inside-inclinic-consult h2{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+    margin-bottom: 15px;
+}
+
+#wrapper-for-inclinic-consultation #first-div-inside-inclinic-consult p{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+}
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult .inclinic-card-link {
+    width: 280px;
+    height: 270px;
+}
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult .inclinic-card-link a{
+    text-decoration: none;
+}
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult .inclinic-card-link img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult .inclinic-card-link a h3{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+    margin-bottom: 10px;
+}
+
+
+main #wrapper-for-inclinic-consultation #second-div-inside-inclinic-consult .inclinic-card-link a p{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: #414146;
+    font-size: 14px;
+}
+
+.inclinic-card-link-anchor:hover h3{
+    color: #018f07;
+}
+
+
+/* footer */
+
+footer #footer-wrapper-div{
+    width: 100%;
+    height: 500px;
+    background-color: #018f07;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-wrapper-div #footer-content{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer #footer-wrapper-div #footer-content .footer-content-categories{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-wrapper-div #footer-content .footer-content-categories h4{
+    color: white;
+    margin-bottom: 10px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+footer #footer-wrapper-div #footer-content .footer-content-categories a{
+    text-decoration: none;
+    color: white;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+footer #footer-wrapper-div #footer-copyright div{
+    width: 210px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer #footer-wrapper-div #footer-copyright div img{
+    width: 100%;
+}
+
+footer #footer-wrapper-div #footer-copyright p{
+    text-align: center;
+    color: #B8BBD9;
+    margin-bottom: 50px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
 }
